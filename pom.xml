@@ -82,18 +82,16 @@
 	<build>
     <plugins>
         <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>3.0.0</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>java</goal> <!-- Use this to execute a Java class -->
-                    </goals>
-                </execution>
-            </executions>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.13.0</version>
             <configuration>
-                <mainClass>web.File_upload</mainClass>
+                <source>1.8</source>
+                <target>1.8</target>
+                <compilerArgs>
+                    <arg>-Xlint:deprecation</arg>
+                    <arg>-Xlint:-options</arg>
+                </compilerArgs>
             </configuration>
         </plugin>
     </plugins>
