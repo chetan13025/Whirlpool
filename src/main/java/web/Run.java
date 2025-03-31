@@ -1,9 +1,7 @@
-package web;
+// package web;
 
-import org.testng.annotations.Test;
-@Test
+// import org.testng.annotations.Test;
 
-public class Run extends File_upload {
-	
+// public class Run extends File_upload {
 
-}
+// }

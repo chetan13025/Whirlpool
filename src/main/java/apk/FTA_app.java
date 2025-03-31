@@ -28,26 +28,29 @@ public class FTA_app extends Create_trip {
 	static int i = 1;
 
 	public static void main(String[] args) throws MalformedURLException, InterruptedException {
-//		public static void Executive() throws InterruptedException {
+		// public static void Executive() throws InterruptedException {
 
-//		DesiredCapabilities dc = new DesiredCapabilities();
-//		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
-//		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-//		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
-//		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Nokia");
-//		dc.setCapability("appPackage", "com.blubirch.ftabb");
-//		dc.setCapability("appActivity", "com.blubirch.ftabb.MainActivity");
-//		URL url = new URL("http://127.0.0.1:4723/wd/hub");
-//		AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(url, dc);
-//		Thread.sleep(3000);
-//		WebElement user = driver.findElement(By.xpath("//android.widget.EditText[@resource-id='ion-input-0']"));
-//		user.click();
-//		user.sendKeys("chetan_fileds@yopmail.com");
-//		WebElement pass = driver.findElement(By.xpath("//android.widget.EditText[@resource-id='ion-input-1']"));
-//		pass.click();
-//		pass.sendKeys("blubirch@123");
-//		Thread.sleep(1500);
-//		driver.findElement(By.xpath("//android.widget.Button[@text='Sign In']")).click();
+		// DesiredCapabilities dc = new DesiredCapabilities();
+		// dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+		// dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		// dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
+		// dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Nokia");
+		// dc.setCapability("appPackage", "com.blubirch.ftabb");
+		// dc.setCapability("appActivity", "com.blubirch.ftabb.MainActivity");
+		// URL url = new URL("http://127.0.0.1:4723/wd/hub");
+		// AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(url, dc);
+		// Thread.sleep(3000);
+		// WebElement user =
+		// driver.findElement(By.xpath("//android.widget.EditText[@resource-id='ion-input-0']"));
+		// user.click();
+		// user.sendKeys("chetan_fileds@yopmail.com");
+		// WebElement pass =
+		// driver.findElement(By.xpath("//android.widget.EditText[@resource-id='ion-input-1']"));
+		// pass.click();
+		// pass.sendKeys("blubirch@123");
+		// Thread.sleep(1500);
+		// driver.findElement(By.xpath("//android.widget.Button[@text='Sign
+		// In']")).click();
 
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
@@ -61,7 +64,7 @@ public class FTA_app extends Create_trip {
 		driver.findElement(By.xpath("//ion-button")).click();
 		Thread.sleep(500);
 		WebElement logisticsr = driver.findElement(By.xpath("(//ion-col[@class='cat-item md hydrated'])[1]"));
-//		WebElement Logistics = driver.findElement(By.xpath(logisticsr));
+		// WebElement Logistics = driver.findElement(By.xpath(logisticsr));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", logisticsr);
 		Thread.sleep(1500);
@@ -86,7 +89,7 @@ public class FTA_app extends Create_trip {
 				"(//ion-button[@class='question-btn md button button-block button-outline ion-activatable ion-focusable hydrated'])[1]"))
 				.click();
 		driver.findElement(By.xpath("(//ion-col[@class='md hydrated'])[1]//img")).click();
-		
+
 	}
 
 }

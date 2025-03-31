@@ -88,10 +88,6 @@
             <configuration>
                 <source>1.8</source>
                 <target>1.8</target>
-                <compilerArgs>
-                    <arg>-Xlint:deprecation</arg>
-                    <arg>-Xlint:-options</arg>
-                </compilerArgs>
             </configuration>
         </plugin>
     </plugins>
